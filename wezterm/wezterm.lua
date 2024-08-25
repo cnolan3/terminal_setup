@@ -23,10 +23,13 @@ config.initial_cols = 240
 config.initial_rows = 65
 config.swallow_mouse_click_on_window_focus = true
 config.underline_thickness = "1px"
+config.audible_bell = "Disabled"
 
 config.font = wezterm.font("FiraCode Nerd Font", { weight = "Medium", stretch = "Normal", style = "Normal" })
+-- config.font = wezterm.font("FiraCode Nerd Font")
+-- config.font = wezterm.font("BigBlueTerm437 Nerd Font", { weight = "Regular", stretch = "Normal", style = "Normal" })
 
--- config.window_background_opacity = 0.8
+config.window_background_opacity = 0.9
 
 config.color_scheme = "Kanagawa Wave"
 
@@ -66,6 +69,6 @@ config.color_schemes = {
 	},
 }
 
--- config.window_decorations = "RESIZE"
+config.window_decorations = "RESIZE"
 
 return config
