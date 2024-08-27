@@ -217,7 +217,7 @@ prompt_hg() {
 
 # Dir: current working directory
 prompt_dir() {
-  prompt_segment blue $CURRENT_FG '%~'
+  prompt_segment blue $CURRENT_FG '%2~'
 }
 
 # Virtualenv: current working virtualenv
@@ -262,9 +262,11 @@ build_prompt() {
   prompt_aws
   prompt_context
   prompt_dir
-  prompt_git
+  if ! [[ -n "$TMUX" ]]; then # show git status only if not in tmux
+    prompt_git
+  fi
   prompt_bzr
-  prompt_hg
+  # prompt_hg
   prompt_end
 }
 
