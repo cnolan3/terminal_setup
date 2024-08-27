@@ -29,7 +29,7 @@ config.font = wezterm.font("FiraCode Nerd Font", { weight = "Medium", stretch = 
 -- config.font = wezterm.font("FiraCode Nerd Font")
 -- config.font = wezterm.font("BigBlueTerm437 Nerd Font", { weight = "Regular", stretch = "Normal", style = "Normal" })
 
-config.window_background_opacity = 0.9
+config.window_background_opacity = 0.8
 
 config.color_scheme = "Kanagawa Wave"
 
