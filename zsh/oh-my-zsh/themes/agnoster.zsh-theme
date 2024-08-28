@@ -262,9 +262,7 @@ build_prompt() {
   prompt_aws
   prompt_context
   prompt_dir
-  if ! [[ -n "$TMUX" ]]; then # show git status only if not in tmux
-    prompt_git
-  fi
+  prompt_git
   prompt_bzr
   # prompt_hg
   prompt_end
