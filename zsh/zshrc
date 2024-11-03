@@ -109,6 +109,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 export PATH="$PATH:/usr/local/go/bin"
+export GOPATH="$HOME/go"
 
 # Created by `pipx` on 2024-10-18 07:29:04
 export PATH="$PATH:/home/connor/.local/bin"
