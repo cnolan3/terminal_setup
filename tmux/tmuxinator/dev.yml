@@ -53,6 +53,9 @@ windows:
       panes:
         - nvim .
         -
+  - lazygit:
+      panes:
+        - lazygit
   - server:
       layout: even-vertical
       panes:

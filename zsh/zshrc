@@ -113,3 +113,5 @@ export GOPATH="$HOME/go"
 
 # Created by `pipx` on 2024-10-18 07:29:04
 export PATH="$PATH:/home/connor/.local/bin"
+
+export PATH="$PATH:/usr/bin/nvim-linux-x86_64/bin"
