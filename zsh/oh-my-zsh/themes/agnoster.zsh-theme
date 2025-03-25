@@ -262,7 +262,9 @@ build_prompt() {
   prompt_aws
   prompt_context
   prompt_dir
-  prompt_git
+  if ! [[ -n "$TMUX" ]]; then
+    prompt_git
+  fi
   prompt_bzr
   # prompt_hg
   prompt_end
