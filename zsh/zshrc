@@ -70,7 +70,7 @@ ENABLE_CORRECTION="true"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git direnv)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -104,6 +104,8 @@ fi
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias mux="tmuxinator start "
 
+alias python="python3"
+
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
@@ -115,3 +117,30 @@ export GOPATH="$HOME/go"
 export PATH="$PATH:/home/connor/.local/bin"
 
 export PATH="$PATH:/usr/bin/nvim-linux-x86_64/bin"
+
+# if [[ -z "$VIRTUAL_ENV" ]] ; then
+#   ## If env folder is found then activate the vitualenv
+#     if [[ -d ./.env ]] ; then
+#       source ./.env/bin/activate
+#     fi
+# fi
+#
+# # auto activate python venv
+# function cd() {
+#   builtin cd "$@"
+#
+#   if [[ -z "$VIRTUAL_ENV" ]] ; then
+#     ## If env folder is found then activate the vitualenv
+#       if [[ -d ./.env ]] ; then
+#         source ./.env/bin/activate
+#       fi
+#   else
+#     ## check the current folder belong to earlier VIRTUAL_ENV folder
+#     # if yes then do nothing
+#     # else deactivate
+#       parentdir="$(dirname "$VIRTUAL_ENV")"
+#       if [[ "$PWD"/ != "$parentdir"/* ]] ; then
+#         deactivate
+#       fi
+#   fi
+# }
