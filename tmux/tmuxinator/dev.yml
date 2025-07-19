@@ -46,12 +46,13 @@ root: ./
 
 windows:
   - editor:
-      layout: e923,137x64,0,0[137x50,0,0,1,137x13,0,51,3]
+      layout: fc50,247x64,0,0[247x50,0,0{163x50,0,0,1,83x50,164,0,7},247x13,0,51,4]
       # Synchronize all panes of this window, can be enabled before or after the pane commands run.
       # 'before' represents legacy functionality and will be deprecated in a future release, in favour of 'after'
       # synchronize: after
       panes:
         - nvim .
+        - claude
         -
   - lazygit:
       panes:
